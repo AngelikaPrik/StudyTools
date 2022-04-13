@@ -8,3 +8,35 @@
 .text-primary {
   color: #96BB7C !important;
 }
+
+.stats {
+  padding: 80px 0;
+}
+
+.stats h6 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.stats .metrics-item {
+  font-weight: 700;
+  font-size: 58px;
+}
+
+.clients-important, .advice {
+  padding: 160px 0;
+}
+
+.line {
+  width: 94px;
+  height: 7px;
+  background-color: #E74040;
+}
+
+.advice {
+  background: #FFF2F3;
+}
+
+.advice p {
+  color: #737373;
+}
