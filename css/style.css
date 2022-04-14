@@ -1,3 +1,15 @@
+.bg-danger {
+  background: #E74040 !important;
+}
+
+.bg-dark {
+  background: #2D4059 !important;
+}
+
+.colorDarkBlue {
+  color: #2D4059;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +19,14 @@
 
 .text-primary {
   color: #96BB7C !important;
+}
+
+.header .active {
+  text-decoration: underline;
+}
+
+.header ul > li > a {
+  color: #737373 !important;
 }
 
 .stats {
@@ -23,14 +43,14 @@
   font-size: 58px;
 }
 
-.clients-important, .advice {
+.clients-important,
+.advice {
   padding: 160px 0;
 }
 
 .line {
   width: 94px;
   height: 7px;
-  background-color: #E74040;
 }
 
 .advice {
@@ -39,4 +59,45 @@
 
 .advice p {
   color: #737373;
+}
+
+.advice .card .badge {
+  font-size: 14px;
+  padding: 5px 10px;
+  top: 5%;
+  left: 5%;
+}
+
+.advice .card-body .rate {
+  font-size: 0.75rem;
+  border-radius: 20px;
+}
+
+.advice .card-body a {
+  border-radius: 37px;
+  border: 1px solid #96BB7C !important;
+}
+
+.advice .card-body a.btn-outline-primary:hover {
+  background-color: #96BB7C;
+  color: white !important;
+}
+
+.advice .card-body .price p {
+  color: #BDBDBD;
+}
+
+.product-actions {
+  top: -20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.product-actions button {
+  border-radius: 50%;
+}
+
+.orangeColor {
+  color: #FFAB71 !important;
 }

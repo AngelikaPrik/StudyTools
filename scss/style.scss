@@ -1,4 +1,18 @@
 $greyColor: #737373;
+$redColor: #E74040;
+$darkBlue:#2D4059;
+$primaryColor: #96BB7C;
+
+.bg-danger {
+	background: $redColor !important;
+}
+
+.bg-dark {
+	background: $darkBlue !important;
+}
+.colorDarkBlue {
+	color: $darkBlue;
+}
 
 * {
 	padding: 0;
@@ -7,7 +21,16 @@ $greyColor: #737373;
 }
 
 .text-primary {
-	color: #96BB7C !important;
+	color: $primaryColor !important;
+}
+
+.header {
+	.active {
+		text-decoration: underline;
+	}
+	ul > li > a {
+		color: $greyColor !important;
+	}
 }
 
 .stats {
@@ -24,19 +47,65 @@ $greyColor: #737373;
 	}
 }
 
-.clients-important, .advice {
+.clients-important,
+.advice {
 	padding: 160px 0;
 }
 
 .line {
 	width: 94px;
 	height: 7px;
-	background-color: #E74040;
+
 }
+
 .advice {
 	background: #FFF2F3;
 
-	p{
+	p {
 		color: $greyColor;
 	}
+
+	.card {
+		.badge {
+			font-size: 14px;
+			padding: 5px 10px;
+			top: 5%;
+			left: 5%;
+		}
+
+	}
+
+	.card-body {
+		.rate {
+			font-size: 0.75rem;
+			border-radius: 20px;
+		}
+
+		a {
+			border-radius: 37px;
+			border: 1px solid $primaryColor !important;
+
+			&.btn-outline-primary:hover {
+				background-color: $primaryColor;
+				color: white !important;
+			}
+		}
+		.price {
+			p {
+				color: #BDBDBD;
+			}
+		}
+	}
+
+}
+.product-actions {
+	top: -20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	button {
+		border-radius: 50%;
+	}
+}
+.orangeColor {
+	color: #FFAB71 !important;
 }
