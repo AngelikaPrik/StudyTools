@@ -3,6 +3,15 @@ $redColor: #E74040;
 $darkBlue:#2D4059;
 $primaryColor: #96BB7C;
 
+.bg-primary {
+	background: $primaryColor !important;
+	border: none;
+}
+
+.btn-outline-primary {
+	border: 1px solid $primaryColor !important;
+}
+
 .bg-danger {
 	background: $redColor !important;
 }
@@ -10,26 +19,65 @@ $primaryColor: #96BB7C;
 .bg-dark {
 	background: $darkBlue !important;
 }
-.colorDarkBlue {
-	color: $darkBlue;
-}
+
 
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	color: $darkBlue;
 }
 
 .text-primary {
 	color: $primaryColor !important;
 }
 
+header {
+	background-color: #FAFAFA;
+}
 .header {
+	background-image: url(../img/background.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	padding-top: 20px 0 76px 0;
+
+	h1 {
+		letter-spacing: 0.2px;
+	}
+
 	.active {
 		text-decoration: underline;
 	}
-	ul > li > a {
+
+	ul>li>a {
 		color: $greyColor !important;
+	}
+
+	.navbar-nav {
+		a {
+			font-size: 0.875rem;
+		}
+	}
+
+	.btn-group {
+		a {
+			font-size: 0.875rem;
+		}
+
+		.btn-primary {
+			border-radius: 5px;
+		}
+	}
+	.line {
+		width: 50px;
+height: 2px;
+background-color: $redColor;
+	}
+	.card-icon {
+		border-radius: 50%;
+		width: 72px;
+		height: 72px;
 	}
 }
 
@@ -90,6 +138,7 @@ $primaryColor: #96BB7C;
 				color: white !important;
 			}
 		}
+
 		.price {
 			p {
 				color: #BDBDBD;
@@ -98,14 +147,17 @@ $primaryColor: #96BB7C;
 	}
 
 }
+
 .product-actions {
 	top: -20%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+
 	button {
 		border-radius: 50%;
 	}
 }
+
 .orangeColor {
 	color: #FFAB71 !important;
 }
