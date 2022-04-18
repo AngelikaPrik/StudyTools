@@ -3,6 +3,11 @@
   border: none;
 }
 
+.btn-primary {
+  background-color: #96BB7C !important;
+  color: white !important;
+}
+
 .btn-outline-primary {
   border: 1px solid #96BB7C !important;
 }
@@ -13,6 +18,10 @@
 
 .bg-dark {
   background: #2D4059 !important;
+}
+
+.greyColor {
+  color: #737373;
 }
 
 * {
@@ -29,13 +38,13 @@
 
 header {
   background-color: #FAFAFA;
+  padding: 20px 0 80px 0;
 }
 
 .header {
   background-image: url(../img/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 20px 0 76px 0;
 }
 
 .header h1 {
@@ -54,12 +63,16 @@ header {
   font-size: 0.875rem;
 }
 
-.header .btn-group a {
+.header a {
   font-size: 0.875rem;
 }
 
-.header .btn-group .btn-primary {
-  border-radius: 5px;
+.header .card {
+  border-radius: 0%;
+}
+
+.header .card p {
+  color: #737373;
 }
 
 .header .line {
@@ -72,6 +85,11 @@ header {
   border-radius: 50%;
   width: 72px;
   height: 72px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #96BB7C !important;
+  color: white !important;
 }
 
 .stats {
@@ -145,4 +163,41 @@ header {
 
 .orangeColor {
   color: #FFAB71 !important;
+}
+
+.reviews {
+  padding: 160px 0;
+}
+
+.reviews .card {
+  border-radius: 0%;
+}
+
+.reviews .card .card-text {
+  font-size: 0.875rem;
+  color: #737373;
+}
+
+.team {
+  padding: 112px 0;
+}
+
+.team .card {
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.subscribe {
+  padding: 160px 0;
+}
+
+.subscribe input {
+  background-color: #F9F9F9 !important;
+  color: #737373 !important;
+  border: 2px solid #E6E6E6 !important;
+}
+
+.footer {
+  background-color: #FAFAFA;
 }
